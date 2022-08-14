@@ -1,0 +1,19 @@
+<div class="login-container">
+    <img class="painting" src="assets/images/painting.png">
+    <div class="title">WorldWide <span>Paintings</span></div>
+    <div class="description">Painting is an ancient medium and even with the introduction of photography, film and digital technology, it still has remained a persistent mode of expression. So many paintings have been limned over dozens of millennia that only a relatively small percentage of them could be construed as "timeless classics" that have become familiar to the public—and not coincidentally produced by some of the most famous artists of all time.</div>
+    <form class="form">
+        <div class="form-inputs">
+            <label for="username">Username</label>
+            <input placeholder="Enter Username" type="text" name="username" class="form-control" [(ngModel)]="username"/>
+        </div>
+        <div class="form-inputs">
+            <label for="passord">Password</label>
+            <input placeholder="Enter Password" type="text" name="password" class="form-control" [(ngModel)]="password"/>
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </form>
+</div>

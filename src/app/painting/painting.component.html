@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="painting-container">
+  <div class="top">
+    <div class="left">
+      <div class="name">{{ painting?.name }}</div>
+      
+      <div class="cover">
+        <img [src]="painting?.cover" alt="" />
+      </div>
+    </div>
+    <div class="right">
+      <div class="title">Rate this painting</div>
+      <form [formGroup]="userForm" class="rating-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Name" formControlName="name" class="form-control" [(ngModel)]="name" />
+        </div>
+        <div class="form-group">
+          <label for="review">Review</label>
+          <textarea placeholder="Your Review..." formControlName="review" rows="3" class="form-control" [(ngModel)]="review"></textarea>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn-dark" (click)="addReview()">Submit</button>
+        </div>
+    </form>
+    </div>
+  </div>
+  <div class="bottom">
+    <h4 class="title">Reviews</h4>
+    <div class="reviews">
+      <div class="review" *ngFor="let review of listData">
+        <div class="review-details">
+          <div class="review-left">
+            <div class="author">{{ review.name }}</div>
+        </div>
+        </div>
+        <div class="review-text">{{ review.review }}</div>
+      </div>
+    </div>
+  </div>
+</div>

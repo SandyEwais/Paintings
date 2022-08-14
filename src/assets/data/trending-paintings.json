@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Leonardo Da Vinci, Mona Lisa",
+    "cover": "assets/images/monalisa.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Johannes Vermeer, Girl with a Pearl Earring",
+    "cover": "assets/images/girl.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Vincent van Gogh, The Starry Night",
+    "cover": "assets/images/thestarrynight.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Claude Monet, Impression, Sunrise",
+    "cover": "assets/images/sunrise.jpg"
+  }
+]

@@ -1,0 +1,90 @@
+.home-container {
+    display: flex;
+  }
+  .home-container .all-paintings {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    border-right: 1px solid #cebbd1;
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+  }
+  .home-container .all-paintings .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .home-container .all-paintings .top h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid #af59bd;
+    padding-left: 10px;
+  }
+  .home-container .all-paintings .top .view-all {
+    color: #af59bd;
+    cursor: pointer;
+  }
+  .home-container .all-paintings .paintings-thumbnail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .home-container .all-paintings .paintings-thumbnail .paintings .cover {
+    cursor: pointer;
+  }
+  .home-container .all-paintings .paintings-thumbnail .movie .cover img {
+    border-radius: 5px;
+  }
+  .home-container .all-paintings .paintings-thumbnail .paintings .detail {
+    width: 180px;
+  }
+  .home-container .all-paintings .paintings-thumbnail .paintings .detail .name {
+    font-weight: bold;
+    height: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .home-container .popular-paintings {
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+  }
+  .home-container .popular-paintings h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid #af59bd;
+    padding-left: 10px;
+  }
+  .home-container .popular-paintings .paintings .movie {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-container .popular-paintings .paintings .movie .name {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .home-container .popular-paintings .paintings .view-all {
+    color: #af59bd;
+    text-align: right;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .rating {
+    padding-right: 45px;
+    position: relative;
+  }
+  .rating .rating-value {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
+  }
+
+  .paintings-thumbnail {
+    margin-top: 85px;
+  }
+  
